@@ -1,4 +1,4 @@
-def call(String scmUrl, String projectName, String repoName, String credentialsId, String branch='master', String scmClass = 'GitSCM') {
+def call(String scmUrl, String projectName, String repoName, String credentialsId, String branch='master', def additionalMapExtensions = [], String scmClass = 'GitSCM') {
 
   def scm = [ 
     $class            : "${scmClass}",
@@ -6,5 +6,10 @@ def call(String scmUrl, String projectName, String repoName, String credentialsI
     branches          : [[name: "${branch}"]]
   ]
   
+  if (additionalMapExtensions) {
+    scm << additionalMapExtensions
+  }
+
   return scm
+
 }
