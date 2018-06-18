@@ -21,7 +21,7 @@ where
   * scmUrl is the base URL of the SCM provider you want to use with a trailing slash e.g. https://github.com/
   * projectName is the name of the repository to checkout
   * repoName is the name of the repository to checkout
-  * credentialsId is the name of the credential in the Jenkins credential manager to use
+  * credentialsId is the id of the credential in the Jenkins credential manager to use
   * branch is the name of the branch to checkout on ref updates, defaults to master
   * additionalMapExtensions is an additional arrayList of scm extensions which will be appended to the returned scm object, defaults to empty
   * scmClass is the name of the parent SCM class to implement, defaults to Git
