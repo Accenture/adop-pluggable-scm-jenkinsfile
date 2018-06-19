@@ -19,7 +19,7 @@ checkout scmGet(scmUrl, projectName, repoName, credentialsId, branch, additional
 where
 
   * scmUrl is the base URL of the SCM provider you want to use with a trailing slash e.g. https://github.com/
-  * projectName is the name of the repository to checkout
+  * projectName is the name of the project/namespace in your SCM provider
   * repoName is the name of the repository to checkout
   * credentialsId is the id of the credential in the Jenkins credential manager to use
   * branch is the name of the branch to checkout on ref updates, defaults to master
